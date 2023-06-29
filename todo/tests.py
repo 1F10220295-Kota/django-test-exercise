@@ -36,6 +36,7 @@ class TaskModelTestCase(TestCase):
 
         self.assertFalse(task.is_overdue(current))
 
+class TodoViewTestCase(TestCase):
     def test_index_get(self):
         client = Client()
         response = client.get('/')
